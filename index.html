@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Barraca de Sandra – Sabor Caseiro</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Google Fonts: Bebas Neue (display) + Nunito (corpo) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="header" id="header">
+    <div class="header__inner container">
+
+      <!-- Logo -->
+      <a href="#inicio" class="logo">
+        <span class="logo__icon">🍢</span>
+        <span class="logo__text">Barraca de <strong>Sandra</strong></span>
+      </a>
+
+      <!-- Navegação Desktop -->
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
+          <li><a href="#inicio"   class="nav__link">Início</a></li>
+          <li><a href="#cardapio" class="nav__link">Cardápio</a></li>
+          <li><a href="#sobre"    class="nav__link">Sobre</a></li>
+          <li><a href="#contato"  class="nav__link nav__link--cta">Contato</a></li>
+        </ul>
+      </nav>
+
+      <!-- Botão hambúrguer (mobile) -->
+      <button class="hamburger" id="hamburger" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="inicio">
+    <div class="hero__bg"></div>
+    <div class="hero__overlay"></div>
+
+    <div class="hero__content container fade-in">
+      <span class="hero__badge">🔥 Aberto agora!</span>
+      <h1 class="hero__title">Sabor caseiro<br>que <em>conquista!</em></h1>
+      <p class="hero__sub">Espetinhos, hambúrgueres e bebidas geladas —<br>tudo feito com carinho e ingredientes frescos.</p>
+      <a href="#cardapio" class="btn btn--primary">Ver Cardápio ↓</a>
+    </div>
+
+    <!-- Onda decorativa na base -->
+    <div class="hero__wave">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="var(--bg)"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ========== CARDÁPIO ========== -->
+  <section class="cardapio section" id="cardapio">
+    <div class="container">
+
+      <div class="section__head fade-in">
+        <span class="section__label">🍽️ O que tem hoje</span>
+        <h2 class="section__title">Nosso Cardápio</h2>
+        <p class="section__desc">Tudo preparado na hora, com muito capricho.</p>
+      </div>
+
+      <div class="cardapio__grid">
+
+        <!-- Item 1 -->
+        <article class="card fade-in">
+          <div class="card__emoji">🍢</div>
+          <div class="card__body">
+            <h3 class="card__name">Espetinho</h3>
+            <p class="card__desc">Carne macia temperada no capricho, assada na brasa.</p>
+          </div>
+          <div class="card__footer">
+            <span class="card__price">R$ 5,00</span>
+            <span class="card__tag">Popular</span>
+          </div>
+        </article>
+
+        <!-- Item 2 -->
+        <article class="card fade-in">
+          <div class="card__emoji">🍔</div>
+          <div class="card__body">
+            <h3 class="card__name">Hambúrguer</h3>
+            <p class="card__desc">Blend artesanal, queijo derretido e molho especial da Sandra.</p>
+          </div>
+          <div class="card__footer">
+            <span class="card__price">R$ 12,00</span>
+            <span class="card__tag card__tag--destaque">Destaque</span>
+          </div>
+        </article>
+
+        <!-- Item 3 -->
+        <article class="card fade-in">
+          <div class="card__emoji">🥤</div>
+          <div class="card__body">
+            <h3 class="card__name">Refrigerante</h3>
+            <p class="card__desc">Latinha gelada de 350ml. Várias marcas disponíveis.</p>
+          </div>
+          <div class="card__footer">
+            <span class="card__price">R$ 5,00</span>
+          </div>
+        </article>
+
+        <!-- Item 4 -->
+        <article class="card fade-in">
+          <div class="card__emoji">🍹</div>
+          <div class="card__body">
+            <h3 class="card__name">Suco Natural</h3>
+            <p class="card__desc">Feito na hora com frutas frescas. Caju, manga, tamarindo e mais.</p>
+          </div>
+          <div class="card__footer">
+            <span class="card__price">R$ 7,00</span>
+            <span class="card__tag card__tag--novo">Novo</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SOBRE ========== -->
+  <section class="sobre section" id="sobre">
+    <div class="container sobre__inner">
+
+      <div class="sobre__visual fade-in" aria-hidden="true">
+        <div class="sobre__blob">
+          <span class="sobre__emoji">👩‍🍳</span>
+        </div>
+        <div class="sobre__stat">
+          <strong>+10 anos</strong>
+          <span>de tradição</span>
+        </div>
+      </div>
+
+      <div class="sobre__text fade-in">
+        <span class="section__label">💛 Nossa história</span>
+        <h2 class="section__title">Sobre a Barraca</h2>
+        <p>
+          A <strong>Barraca de Sandra</strong> é um ponto tradicional da região, conhecido pela
+          comida gostosa, atendimento acolhedor e preços honestos.
+        </p>
+        <p>
+          Tudo é feito com <strong>carinho e ingredientes frescos</strong>, do espetinho assado na hora
+          ao suco preparado na sua frente. É o sabor de casa, servido com alegria.
+        </p>
+        <p>Venha nos visitar — você vai querer voltar sempre! 😄</p>
+        <a href="#contato" class="btn btn--primary" style="margin-top:1.5rem">Fale com a Sandra</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== CONTATO ========== -->
+  <section class="contato section" id="contato">
+    <div class="container">
+
+      <div class="section__head fade-in">
+        <span class="section__label">📍 Vem nos encontrar</span>
+        <h2 class="section__title">Contato & Localização</h2>
+      </div>
+
+      <div class="contato__inner">
+
+        <!-- Infos -->
+        <div class="contato__info fade-in">
+
+          <div class="info-card">
+            <span class="info-card__icon">📍</span>
+            <div>
+              <strong>Endereço</strong>
+              <p>Rua das Flores, 123 – Centro<br>Queimadas – PB</p>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <span class="info-card__icon">🕐</span>
+            <div>
+              <strong>Horário</strong>
+              <p>Seg – Sáb: 17h às 23h<br>Domingo: 16h às 22h</p>
+            </div>
+          </div>
+
+          <!-- Botão WhatsApp -->
+          <!-- 🔧 EDITE O NÚMERO ABAIXO: remova o "55" e adicione DDD + número -->
+          <a
+            href="https://wa.me/5583999999999?text=Olá%20Sandra!%20Gostaria%20de%20fazer%20um%20pedido%20😊"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn--whatsapp"
+          >
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+            Chamar no WhatsApp
+          </a>
+        </div>
+
+        <!-- Mapa embed -->
+        <div class="contato__mapa fade-in">
+          <iframe
+            title="Localização da Barraca de Sandra"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31453.6!2d-35.905!3d-7.617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ac3d5b0a5a5a5a5%3A0x0!2sQueimadas%2C%20PB!5e0!3m2!1spt-BR!2sbr!4v1"
+            width="100%"
+            height="300"
+            style="border:0; border-radius: 16px;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="logo logo--small">🍢 Barraca de <strong>Sandra</strong></span>
+      <p class="footer__copy">© <span id="ano"></span> · Todos os direitos reservados</p>
+      <a href="#inicio" class="footer__top" aria-label="Voltar ao topo">↑</a>
+    </div>
+  </footer>
+
+  <!-- Botão Voltar ao Topo (flutuante) -->
+  <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
